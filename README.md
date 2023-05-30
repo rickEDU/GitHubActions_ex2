@@ -1,1 +1,1 @@
-# GitHubActions_ex2
+# Projeto: CI/CD aula 02
