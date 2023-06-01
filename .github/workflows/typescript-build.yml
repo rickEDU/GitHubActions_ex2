@@ -42,3 +42,17 @@ jobs:
 
       - name: Run tests
         run: npm run test
+
+  deploy-staging:
+    needs: [build, test]
+    runs-on: ubuntu-latest
+    if: github.ref_name == 'main'
+
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy
+      - whith: 
+          url: ${{ secrets.STAGIN_KEY }}
