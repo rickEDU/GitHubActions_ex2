@@ -55,4 +55,4 @@ jobs:
 
       - name: Deploy
       - whith: 
-          url: ${{ secrets.STAGIN_KEY }}
+          url: "${{ secrets.STAGIN_KEY }}"
