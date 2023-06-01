@@ -55,5 +55,5 @@ jobs:
 
       - name: Deploy
         uses: fjogeleit/http-request-action@v1
-        whith: 
+        with: 
           url: "${{ secrets.STAGIN_KEY }}"
