@@ -86,6 +86,5 @@ describe("DELETE /todo/:id", () => {
     expect(response.body).toEqual({
       mensagem: `ID não encontrado!`,
     });
-
   });
 });
