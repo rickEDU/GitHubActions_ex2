@@ -6,7 +6,7 @@ on:
 jobs:
   deploy-production:
     runs-on: ubuntu-latest
-    if: github.ref == 'main'
+    if: ${{ github.ref == 'refs/heads/main' }}
 
     steps:
       - name: Checkout code
